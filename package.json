@@ -1,0 +1,24 @@
+{
+  "name": "nope.at",
+  "version": "1.0.0",
+  "description": "A minimal blog template using eleventy",
+  "scripts": {
+    "build": "eleventy && npm run sass",
+    "serve": "concurrently 'eleventy --serve' 'npm run sass:watch'",
+    "start": "npm run serve",
+    "sass": "sass styles:_site/styles --no-source-map --style=compressed --update",
+    "sass:watch": "npm run sass && npm run sass -- --watch",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "markdown-it": "^14.1.0",
+    "sass": "^1.83.0"
+  }
+}

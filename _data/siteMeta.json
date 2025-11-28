@@ -1,0 +1,12 @@
+{
+    "url": "https://nope.at",
+    "description": "A blog built with Eleventy",
+    "author": {
+      "name": "Your Name",
+      "email": "your@email.com",
+      "twitter": "",
+      "github": "https://github.com/rwese"
+    },
+    "feedUrl": "/feed.xml"
+  }
+  
